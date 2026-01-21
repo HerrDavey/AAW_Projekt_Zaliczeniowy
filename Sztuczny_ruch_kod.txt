@@ -1,0 +1,39 @@
+<!-- Generowanie losowych wejść na strone - wkleić w konsoli developerskiej po odpalueniu GMT 
+
+var maxVisits = 50; // Ile wizyt chcesz zasymulować
+
+var interval = setInterval(function() {
+    if (count >= maxVisits) {
+        clearInterval(interval);
+        console.log("✅ Zakończono generowanie " + maxVisits + " wizyt!");
+        return;
+    }
+
+    // Losujemy wariant
+    var simulatedVariant = Math.random() < 0.5 ? 'A' : 'B';
+
+    // Wpychamy zdarzenie do GTM (dokładnie to samo, co robi Twoja strona)
+    window.dataLayer.push({
+        'event': 'ab_test_view',
+        'test_variant': simulatedVariant
+    });
+
+    console.log("Wysłano wizytę nr " + (count + 1) + ": Wariant " + simulatedVariant);
+    count++;
+}, 200); // Co 200 milisekund (żeby nie zatkać przeglądarki) -->
+
+
+
+
+<!-- Źródła Ruchu - fikcyjne
+
+1.Ruch z Facebooka 
+http://127.0.0.1:5500/index.html?utm_source=facebook&utm_medium=social&utm_campaign=projekt_zaliczeniowy
+
+2. Ruch z Newslettera
+http://127.0.0.1:5500/index.html?utm_source=newsletter&utm_medium=email&utm_campaign=wiosna
+
+3. Ruch z Google (Płatny)
+http://127.0.0.1:5500/index.html?utm_source=google&utm_medium=cpc&utm_campaign=black_friday
+
+-->

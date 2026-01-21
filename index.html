@@ -1,0 +1,151 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-KM4K57XG');
+    </script>
+
+    <title>David i Tomek SP Z O.O.</title>
+
+    <script>
+        function runABTest() {
+            // Losujemy wariant A lub B
+            var variant = Math.random() < 0.5 ? 'A' : 'B';
+            console.log("Wylosowany wariant testu: " + variant);
+
+            //dane do GTM
+            window.dataLayer = window.dataLayer || [];
+            window.dataLayer.push({
+                'event': 'ab_test_view',
+                'test_variant': variant
+            });
+            
+            //Podmianka strony - czerwony zielony + inne texty
+            document.addEventListener("DOMContentLoaded", function() {
+                if (variant === 'B') {
+                    var btn = document.getElementById('read-more');
+                    if (btn) {
+                        btn.style.backgroundColor = '#FF0000';
+                        btn.innerText = 'SPRAWDŹ TERAZ!';     
+                        btn.style.fontWeight = 'bold';
+                    }
+                }
+            });
+        }
+        runABTest();
+    </script>
+
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            text-align: center;
+            width: 70vw;
+        }
+
+        .product-image {
+            max-width: 300px;
+            margin-bottom: 20px;
+        }
+
+        .contact-form input[type="text"],
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        .contact-form input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+
+            .contact-form input[type="submit"]:hover {
+                background-color: #45a049;
+            }
+
+        .read-more-btn {
+            display: inline-block;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            text-decoration: none;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KM4K57XG"
+        height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <div class="container">
+        <h1>Witamy w interaktywnym sklepie DiT SP. z o.o.</h1>
+        <p>Witamy na naszej stronie internetowej! Poniżej znajdziesz nasze produkty wraz z opisem! Udanych zakupów</p>
+        <a id="read-more" class="read-more-btn" href="."><b>Czytaj o DiT!</b></a>
+
+        <h1>Oto nasze produkty!</h1>
+        <div class="product">
+            <h2>1. Wózek na zakupy <b>(premium)</b></h2>
+            <img class="product-image" src="Produkt-1.jpg" alt="Product 1">
+            <p>
+                Ut leo velit, fringilla vel dictum sed, sollicitudin quis lectus. Nulla facilisi. 
+                Donec molestie metus sed elit ornare sollicitudin. 
+                Nullam dignissim, erat non rhoncus convallis, orci dui mollis elit, ut imperdiet enim purus eget est. 
+                Integer a risus massa. Proin a eros id ex facilisis maximus vitae vel ante. 
+                Aliquam ipsum nibh, dictum euismod ipsum nec, dignissim cursus nisi. Donec vehicula elit in blandit imperdiet. 
+                Nullam in auctor odio. Etiam aliquam porta neque nec dapibus. Integer nisl nunc, 
+                consectetur et sagittis eget, elementum nec libero. Integer dapibus pellentesque ante, eget egestas sem. 
+                Morbi eu blandit enim, ac varius nunc.
+            </p>
+            <a href="https://external_link_1.com" class="product-link" data-product-name="Wozek Premium" target="_blank">View details</a>
+        </div>
+
+        <div class="product">
+            <h2>2. Sianko w kształcie <b>parasolu</b></h2>
+            <img class="product-image" src="Produkt-2.jpg" alt="Product 2">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc et felis quis massa cursus bibendum. 
+                Donec accumsan efficitur ultricies. Mauris tempus congue enim, sed lacinia tortor vestibulum sit amet. 
+                Donec venenatis dui sit amet sapien ornare, id pellentesque metus facilisis. 
+                Morbi a odio luctus, elementum nunc a, porttitor ipsum. Mauris hendrerit diam a varius consequat. 
+                Sed eget ultrices neque, ac aliquam dolor. Praesent at leo a nibh malesuada convallis luctus a massa. 
+                Sed commodo quam eu lacus mollis finibus. Ut eu posuere sapien.
+            </p>
+            <a href="https://external_link_2.com" class="product-link" data-product-name="Sianko Parasol" target="_blank">View details</a>
+        </div>
+
+        <h1>Zobacz jak pracujemy! &#128521;</h1>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/tUeIpeesU8Q?start=2124" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        
+        <h1>Napisz do nas!</h1>
+        <form class="contact-form" action="." method="post">
+            <input type="text" name="name" placeholder="Your name" required><br>
+            <input type="text" name="phone" placeholder="Your phone number" required><br>
+            <textarea name="message" placeholder="Your message" rows="5" required></textarea><br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
+
