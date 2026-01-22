@@ -11,7 +11,7 @@ Strona internetowa z zaimplementowanym Google Analytics za pomocą Google Tag Ma
 [DiT Sp. z o.o. - AAW Projekt Zaliczeniowy](https://herrdavey.github.io/AAW_Projekt_Zaliczeniowy/)
 
 ## RAPORT KOŃCOWY (LOOKER STUDIO)
-[Raport Końcowy (PDF)](Dokumenty_Podsumowanie/Raport_Końcowy_do_Projektu_-_David_Bakalarczyk_Tomasz_Dudek.pdf)
+[Pobierz Raport Końcowy (PDF)](Dokumenty_Podsumowanie/Raport_Końcowy_do_Projektu_-_David_Bakalarczyk,_Tomasz_Dudek.pdf)
 
 ## Implementacja Google Tag Managera
 ### GTM Tagi:
@@ -47,4 +47,4 @@ Strona internetowa z zaimplementowanym Google Analytics za pomocą Google Tag Ma
 <img src="Dokumenty_Podsumowanie/GA4 - Przykładowy Lejek.png" alt="GA4 Przykładowy Lejek" width="800">
 
 ## RAPORT KOŃCOWY (LOOKER STUDIO)
-[Raport Końcowy (PDF)](Dokumenty_Podsumowanie/Raport_Końcowy_do_Projektu_-_David_Bakalarczyk_Tomasz_Dudek.pdf)
+[Pobierz Raport Końcowy (PDF)](Dokumenty_Podsumowanie/Raport_Końcowy_do_Projektu_-_David_Bakalarczyk,_Tomasz_Dudek.pdf)
